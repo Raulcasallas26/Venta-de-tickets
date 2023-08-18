@@ -1,3 +1,3 @@
-const urlBackend="http://localhost:4201"
+const urlBackend="https://venta-tickets.onrender.com"
 export{urlBackend}
 // http://localhost:4201
