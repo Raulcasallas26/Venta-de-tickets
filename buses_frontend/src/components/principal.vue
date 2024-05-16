@@ -165,7 +165,7 @@ const right = () => {
     top: 0;
     bottom: 0;
     transform: scale(0, 0);
-    transition: all 0.3s ease;
+    transition: all 0.3s ease;    
 }
 
 #inicio:hover::after {
@@ -175,7 +175,7 @@ const right = () => {
 
 #anim {
     color: #fff;
-    background-color: rgb(255, 115, 0);
+    background-color: rgb(255, 0, 0);
 }
 
 #icon {
