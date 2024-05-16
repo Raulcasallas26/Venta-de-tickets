@@ -258,7 +258,7 @@
             </q-toolbar>
         </q-footer>
     </q-layout>
-</template>
+</template> 
 
 <script setup>
 import { ref, onMounted } from 'vue'
@@ -299,15 +299,6 @@ async function editarUsers() {
     limpiarLista()
     listarUsuarios()
 }
-async function activar(r) {
-    if (r.estado === true) {
-        r.estado = false
-    } else {
-        r.estado = true
-    }
-    let est = await useUsuario.activarUser(r._id)
-    console.log(est);
-}
 function edito(r) {
     editar.value = true
     indice.value = r._id
@@ -319,6 +310,16 @@ function edito(r) {
     email.value = r.email
     direccion.value = r.direccion
 }
+async function activar(r) {
+    if (r.estado === true) {
+        r.estado = false
+    } else {
+        r.estado = true
+    }
+    let est = await useUsuario.activarUser(r._id)
+    console.log(est);
+}
+
 async function listarUsuarios() {
     let usuarios = await useUsuario.getUsers()
     console.log(usuarios);

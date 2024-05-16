@@ -5,7 +5,7 @@ const ticketsSchema = new mongoose.Schema({
     numViaje: {type: mongoose.Schema.Types.ObjectId, ref:'rutas'},
     bus:{type: mongoose.Schema.Types.ObjectId, ref:'buses'},
     numSilla: {type: String, required: true},
-    nombreVendedor: {type: String, required: true},
+    nombreVendedor: {type: String, required: true}, 
     cliente: {type: mongoose.Schema.Types.ObjectId, ref:'cliente'},
     pago:{type: String, require: true}, 
     fechaHoraCompra:{type: Date, default: Date.now},

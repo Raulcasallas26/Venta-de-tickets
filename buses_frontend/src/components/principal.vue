@@ -81,7 +81,7 @@ const right = () => {
 </script>
 <style scoped>
 #foter {
-    background-color: rgba(0, 68, 255, 0.774);
+    background-color: rgba(255, 0, 0, 0.774);
 }
 
 #menu {
@@ -112,7 +112,7 @@ const right = () => {
 
 #bt::after {
     content: "";
-    background: #f86300;
+    background: #f80000;
     /* color de fondo hover */
     position: absolute;
     z-index: -1;

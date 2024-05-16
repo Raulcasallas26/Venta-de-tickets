@@ -4,7 +4,7 @@ import bcryptjs from "bcryptjs"
 const httpUsuarios = {
     getUsuario: async (req, res) => {
         const Usuarios = await Usuario.find();
-        res.json({ Usuarios });
+        res.json({ Usuarios});
     },
     getUsuarioCedula: async (req, res) => {
         const { cedula } = req.params;

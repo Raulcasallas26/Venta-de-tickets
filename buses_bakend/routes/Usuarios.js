@@ -7,7 +7,7 @@ const router = Router()
 router.get("/", httpUsuarios.getUsuario)
 
 
-router.get("/:cedula", httpUsuarios.getUsuarioCedula)
+// router.get("/:cedula", httpUsuarios.getUsuarioCedula)
 
 router.post("/", [
     check("nombre", "el mombre es obligatorio").notEmpty().trim().isString(),

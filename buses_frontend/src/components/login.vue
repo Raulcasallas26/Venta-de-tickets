@@ -78,7 +78,7 @@ const right = () => {
 </script>
 <style scoped>
 #foter {
-    background-color: rgba(0, 68, 255, 0.774);
+    background-color: rgba(5, 5, 5, 0.774);
 }
 #contra{
     margin: px;
